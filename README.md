@@ -2,7 +2,7 @@
 
 #### 资源宝博客
 
-+ 资源宝：[[https://prain.cn](https://www.httple.net)](https://www.httple.net)
++ 资源宝：[(https://www.httple.net)](https://www.httple.net)
 
 #### 介绍
 “极简云盘”据说是Veno File Manager 的国内优化汉化版，大小不到1.5M，PHP运行环境，无需数据库支持。在apache环境下，确保.htaccess文件可用，才能启用伪静态规则，否则后台关闭伪静态才能实现文件下载
