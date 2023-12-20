@@ -532,19 +532,7 @@ class Updater
         $posteditmail = filter_input(INPUT_POST, 'user_new_email', FILTER_VALIDATE_EMAIL);
         $postoldmail = filter_input(INPUT_POST, 'user_old_email', FILTER_VALIDATE_EMAIL);
 
-        if ($postoldpass && $posteditname) {
-            $updater->updateUser(
-                $posteditname,
-                $postoldname,
-                $posteditpass,
-                $posteditpasscheck,
-                $postoldpass,
-                $posteditmail,
-                $postoldmail
-            );
-        }
-    }
-
+      
     /**
     * Update username or password
     *
@@ -1235,7 +1223,7 @@ class GateKeeper
        
       
 
-        if ($postusername && $postuserpass) {
+      
 
             if (Utils::checkCaptcha($postcaptcha) == true) {
 
@@ -2545,7 +2533,7 @@ class Location
     {
         
 
-        if (!$getdir || !is_dir($getdir)) {
+      
             $this->path = $this->splitPath(SetUp::getConfig('starting_dir'));
         } else {
             $this->path = $this->splitPath($getdir);
@@ -4060,17 +4048,7 @@ class Resetter
        
         
 
-        if ($resetpwd && $resetconf
-            && ($resetpwd == $resetconf)
-            && $userh
-            && $resetter->checkTok($getrp, $userh) == true
-        ) {
-            $username = $resetter->getUserFromSha($userh);
-            $updater->updateUserPwd($username, $resetpwd);
-            $updater->updateUserFile('password');
-            $resetter->resetToken($resetter->getMailFromSha($userh));
-        }
-    }
+     
 
     /**
     * Get user name from encrypted email
