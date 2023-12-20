@@ -524,11 +524,11 @@ class Updater
     {
         global $updater;
 
-        $posteditname = filter_input(INPUT_POST, 'user_new_name', FILTER_SANITIZE_STRING);
-        $postoldname = filter_input(INPUT_POST, 'user_old_name', FILTER_SANITIZE_STRING);
-        $posteditpass = filter_input(INPUT_POST, 'user_new_pass', FILTER_SANITIZE_STRING);
-        $posteditpasscheck = filter_input(INPUT_POST, 'user_new_pass_confirm', FILTER_SANITIZE_STRING);
-        $postoldpass = filter_input(INPUT_POST, 'user_old_pass', FILTER_SANITIZE_STRING);
+      
+        
+       
+       
+     
         $posteditmail = filter_input(INPUT_POST, 'user_new_email', FILTER_VALIDATE_EMAIL);
         $postoldmail = filter_input(INPUT_POST, 'user_old_email', FILTER_VALIDATE_EMAIL);
 
@@ -1230,10 +1230,10 @@ class GateKeeper
             $cookies->checkCookie();
         }
 
-        $postusername = filter_input(INPUT_POST, 'user_name', FILTER_SANITIZE_STRING);
-        $postuserpass = filter_input(INPUT_POST, 'user_pass', FILTER_SANITIZE_STRING);
-        $postcaptcha = filter_input(INPUT_POST, 'captcha', FILTER_SANITIZE_STRING);
-        $rememberme = filter_input(INPUT_POST, 'vfm_remember', FILTER_SANITIZE_STRING);
+       
+      
+       
+      
 
         if ($postusername && $postuserpass) {
 
@@ -1483,8 +1483,8 @@ class FileManager
     */
     public function run($location)
     {
-        $postuserdir = filter_input(INPUT_POST, 'userdir', FILTER_SANITIZE_STRING);
-        $postnewname = filter_input(INPUT_POST, 'newname', FILTER_SANITIZE_STRING);
+       
+      
 
         if ($postuserdir) {
             // add new folder
@@ -1504,7 +1504,7 @@ class FileManager
 
         } else {
             // no post action
-            $getdel = filter_input(INPUT_GET, 'del', FILTER_SANITIZE_STRING);
+         
             // delete files or folders
             if ($getdel
                 && GateKeeper::isUserLoggedIn()
@@ -2543,7 +2543,7 @@ class Location
     */
     public function init()
     {
-        $getdir = filter_input(INPUT_GET, 'dir', FILTER_SANITIZE_STRING);
+        
 
         if (!$getdir || !is_dir($getdir)) {
             $this->path = $this->splitPath(SetUp::getConfig('starting_dir'));
@@ -4055,10 +4055,10 @@ class Resetter
         global $users;
         $users = $_USERS;
 
-        $resetpwd = filter_input(INPUT_POST, 'reset_pwd', FILTER_SANITIZE_STRING);
-        $resetconf = filter_input(INPUT_POST, 'reset_conf', FILTER_SANITIZE_STRING);
-        $userh = filter_input(INPUT_POST, 'userh', FILTER_SANITIZE_STRING);
-        $getrp = filter_input(INPUT_POST, 'getrp', FILTER_SANITIZE_STRING);
+       
+        
+       
+        
 
         if ($resetpwd && $resetconf
             && ($resetpwd == $resetconf)
