@@ -106,11 +106,10 @@ if (isset($_SESSION['warning'])) {
 
 $uid = md5(uniqid(mt_rand()));
 
-$getrp = filter_input(INPUT_GET, "rp", FILTER_SANITIZE_STRING);
-$getreg = filter_input(INPUT_GET, "reg", FILTER_SANITIZE_STRING);
-$regactive = filter_input(INPUT_GET, "act", FILTER_SANITIZE_STRING);
 
-$getusr = filter_input(INPUT_GET, "usr", FILTER_SANITIZE_STRING);
-$getfilelist = filter_input(INPUT_GET, "dl", FILTER_SANITIZE_STRING);
+
+
+
+
 
 require_once 'vfm-admin/vfm-icons.php';
