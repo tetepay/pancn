@@ -3,7 +3,7 @@
  * VFM - veno file manager: include/head.php
  * main php setup
  *
- * PHP version >= 8.1
+ * PHP version >= 5.3
  *
  * @category  PHP
  * @package   VenoFileManager
