@@ -3,15 +3,15 @@
  $_USERS = array (
   0 => 
   array (
-    'name' => 'tetepay',
-    'pass' => '$1$Hplri6V3$mpTbCODnRRNSexu/KbU0z0',
+    'name' => 'admin',
+    'pass' => '$1$MSbkgrPn$.R0XZtlokmyupXodCXx810',
     'role' => 'superadmin',
     'email' => 'freepayzz@163.com',
   ),
   1 => 
   array (
-    'name' => 'admin',
-    'pass' => '$1$QIDtk3N3$Vr8u40/af9yzuQkAdYqOU/',
+    'name' => '123456',
+    'pass' => '$1$fNX51ZVg$J8HDbVnYTB66IM1wUkm/c1',
     'role' => 'user',
     'email' => '123456@qq.com',
   ),
